@@ -198,5 +198,21 @@
     <div class="cta"><a href="https://www.nolimit-casinos.net/" target="_blank" rel="nofollow noopener noreferrer" title="EU">SPELA</a></div>
   </div>
 </div>
+<script>
+(function () {
+  function postHeight() {
+    var h = document.documentElement.scrollHeight;
+    parent.postMessage({ gfarIframeHeight: h }, "*");
+  }
+  window.addEventListener("load", postHeight);
+  window.addEventListener("resize", postHeight);
+  if ("ResizeObserver" in window) {
+    new ResizeObserver(postHeight).observe(document.body);
+  } else {
+    setInterval(postHeight, 800);
+  }
+  postHeight();
+})();
+</script>
 </body>
 </html>
