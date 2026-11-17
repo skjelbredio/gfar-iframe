@@ -97,7 +97,17 @@
   }
   .cta a:hover { background: var(--accent-hover); }
 
-  @media (max-width: 680px) {
+  @media (max-width: 720px) {
+    body { padding: 16px 8px; }
+    .row { gap: 14px; padding: 14px 16px; }
+    .logo { flex: 0 0 60px; }
+    .logo img, .logo a img { width: 60px; height: 60px; }
+    .title { font-size: 16px; flex: 0 0 24%; }
+    .perks { font-size: 13px; }
+    .cta { flex: 0 0 104px; }
+    .cta a { font-size: 13px; padding: 11px 8px; }
+  }
+  @media (max-width: 560px) {
     body { padding: 16px 10px; }
     h2 { font-size: 21px; margin-bottom: 18px; }
     .row {
